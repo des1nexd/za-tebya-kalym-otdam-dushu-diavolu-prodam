@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <style>
+          a:hover {
+            background-color: rgb(148, 246, 1);
+        }
+
+        a.active {
+         background-color: rgb(2, 130, 2);
+}
+    </style>
+</head>
+<body>
+
+<h1> Menu </h1>
+<ul>
+    <li> <a href="main.html">Главная страница </a> </li>
+    <li> <a href="info.html">Информационная страница с главами </a> </li>
+    <li> <a href="test_img.html"> Фото </a> </li>
+    <li> <a href="form.html" class="active"> Форма </a> </li>
+    <li> <a href="passport.html">Паспорт </a> </li>
+    <li> <a href="table.html">Таблица </a> </li>
+    <li> <a href="task.html">Задача </a> </li>
+    <li> <a href="DOM.html">Считывание из DOM</a> </li>
+    <li> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> Внешний сайт </a> </li>
+    <li> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="../photos/youtube.png" width= "20px" alt="" /></a></li>
+</ul>
+
+<h1>Форма 1:</h1>
+<form action="https://www.google.com" id="UserEnter1" name="UserEnter1" target="_blank">
+
+    <p> Введите ваше ФИО <input type="Text" name="fio"></p>
+
+    <p> Введите вашу группу <input type="Text" name="group"></p>
+
+    <p> Введите ваш возраст <input type="number" name="age" min="0" max="100"></p>
+
+    <p> Введите ваш номер телефона <input type="tel" name="Fnumber"></p>
+
+    <p> Введите вашу электронную почту <input type="Text" name="email"></p>
+
+    <p>Укажите дату отправки сообщения: <input name="user_date" type="date" value="2000-01-01"></p>
+
+    <p><input type="submit" value="Отправить">
+    <input type="reset" value="Очистить"></p>
+
+</form>
+
+<h1>Форма 2:</h1>
+
+<form action="https://www.google.com" id="UserEnter2" name="UserEnter2" target="_blank">
+
+    <p> Введите ваше ФИО <input type="Text" name="fio"></p>
+
+    <p><b>Любимая порода кошек</b><br>
+        <input type="radio" name="browser" value="bengalskaya">Бенгальская<br>
+        <input type="radio" name="browser" value="sphinx">Сфинкс<br>
+        <input type="radio" name="browser" value="shotlandskaya">Шотландская вислоухая<br>
+        <input type="radio" name="browser" value="floppa">Каракал Шлёпа<br>
+    </p>
+
+    <p>Комментарий<br>
+    <textarea name="comment" cols="40" rows="3"></textarea></p>
+
+    <p>Дата: <input name="user_date" type="date" value="2000-01-01"></p>
+
+    <p>Насколько сильно вы любите животных: <input name="range" type="range" value="50"></p>
+
+    <p>Пароль: <input name="password" size="9" type="Password" value=""></p>
+
+    <p>У вас есть домашнее животное?<input type="checkbox" name="vpn"  value="no"></p>
+
+    <p>Сколько домашних животных у вас есть?<input type="number" name="vpncount" min="0" max="100"></p>
+
+    <input type="hidden" name="hideparametr" value="something hidden">
+
+    <p><input type="submit" value="Отправить">
+    <input type="reset" value="Очистить"></p>
+
+</form>
+</body>
+
+</html>

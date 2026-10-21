@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача</title>
+
+    <style>
+        a:hover {
+          background-color: greenyellow;
+        }
+
+        a.active {
+          background-color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1> Menu </h1>
+<ul>
+    <li> <a href="main.html">Главная страница </a> </li>
+    <li> <a href="info.html">Информационная страница с главами </a> </li>
+    <li> <a href="test_img.html"> Фото </a> </li>
+    <li> <a href="form.html"> Форма </a> </li>
+    <li> <a href="passport.html">Паспорт </a> </li>
+    <li> <a href="table.html">Таблица </a> </li>
+    <li> <a href="task.html"  class="active">Задача </a> </li>
+    <li> <a href="DOM.html">Считывание из DOM</a> </li>
+    <li> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> Внешний сайт </a> </li>
+    <li> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="../photos/youtube.png" width= "20px" alt="" /></a></li>
+</ul>
+
+
+<main>
+  <h1>Решение алгоритмической задачи</h1>
+
+  <div class="task-card">
+    <p>
+      <b>Условие:</b> определить значение функции
+      <span class="formula">Z = 1 / (X · Y)</span>
+      при произвольных значениях <b>X</b> и <b>Y</b>.
+    </p>
+
+    <div class="inputs">
+      <div>
+        <label for="x">Значение X:</label>
+        <input id="x" type="number" step="any" placeholder="например, 4">
+      </div>
+
+      <div>
+        <label for="y">Значение Y:</label>
+        <input id="y" type="number" step="any" placeholder="например, 2.5">
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn-solve" id="solveBtn">Вычислить Z</button>
+      <button class="btn-reset" id="resetBtn" type="reset">Сбросить</button>
+    </div>
+
+    <div id="result" class="result"></div>
+  </div>
+</main>
+
+<script src="task.js"></script>
+
+</body>
+</html>
